@@ -14,6 +14,9 @@
       }
     },
     "section": {
+      "0": {
+        "title": "Main Menu"
+      },
       "1": {
         "title": "Learn Qur-an",
         "image": ""
@@ -26,13 +29,15 @@
   },
   "index": {
     "sections": {
+      "0": ["1"],
       "1": ["2"]
     },
     "playlists": {
       "2": ["1"]
     },
     "section_parent": {
-      "2": "1"
+      "2": "1",
+      "1": "0"
     },
     "playlist_parent": {
       "1": "2"
