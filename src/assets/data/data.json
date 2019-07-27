@@ -7,21 +7,35 @@
     
   ],
   "data": {
-    "sections": [
-      {
-        "title": "Learning Qur-an",
-        "sections": [
-          {
-            "title": "Qur-an series (Basheer Muhiyudheen)",
-            "playlists": [
-              {
-                "title": "14. Ibrahim",
-                "playlist": "PLDuAaJA22MTDuQh8TrX42tUg3lMAvJbHw"
-              }
-            ]
-          }
-        ]
+    "playlist": {
+      "1": {
+        "title": "14. Ibrahim",
+        "playlist": "PLDuAaJA22MTDuQh8TrX42tUg3lMAvJbHw"
       }
-    ]
+    },
+    "section": {
+      "1": {
+        "title": "Learn Qur-an",
+        "image": ""
+      },
+      "2": {
+        "title": "Basheer Muhiyudheen",
+        "image": ""
+      }
+    }
+  },
+  "index": {
+    "sections": {
+      "1": ["2"]
+    },
+    "playlists": {
+      "2": ["1"]
+    },
+    "section_parent": {
+      "2": "1"
+    },
+    "playlist_parent": {
+      "1": "2"
+    }
   }
 }
