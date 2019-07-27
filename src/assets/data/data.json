@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Fahm",
+    "version": "1.0"
+  },
+  "externalScripts": [
+    
+  ],
+  "data": {
+    "sections": [
+      {
+        "title": "Learning Qur-an",
+        "sections": [
+          {
+            "title": "Qur-an series (Basheer Muhiyudheen)",
+            "playlists": [
+              {
+                "title": "14. Ibrahim",
+                "playlist": "PLDuAaJA22MTDuQh8TrX42tUg3lMAvJbHw"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
