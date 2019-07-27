@@ -11,6 +11,104 @@
       "1": {
         "title": "14. Ibrahim",
         "playlist": "PLDuAaJA22MTDuQh8TrX42tUg3lMAvJbHw"
+      },
+      "2": {
+        "title": "18. Al-Kahf",
+        "playlist": "PLDuAaJA22MTCnVTwMOkZFHhbSarrq1TuI"
+      },
+      "3": {
+        "title": "59. Al-Hashr",
+        "playlist": "PLDuAaJA22MTDpgnX9YnDd2I2ElbYOPdFg"
+      },
+      "4": {
+        "title": "36. Ya-Seen",
+        "playlist": "PLDuAaJA22MTCUxF2edGTkYW2S43mudlpY"
+      },
+      "5": {
+        "title": "1. Al-fathiha",
+        "playlist": "PL2QijULXbSzN7P8MVRjUY3JIPtGquvWRk"
+      },
+      "6": {
+        "title": "114. Annaas",
+        "playlist": "PL2QijULXbSzN2uE72-8L5fLCgldNYGb9S"
+      },
+      "7": {
+        "title": "113. Al-Falaq",
+        "playlist": "PL2QijULXbSzPShW8nOblT8ZlvFgZnCTGm"
+      },
+      "8": {
+        "title": "112. Al-Ikhlas",
+        "playlist": "PL2QijULXbSzP8VuyL23TvEVrHtR5WDcIs"
+      },
+      "9": {
+        "title": "111. Al-Masad",
+        "playlist": "PL2QijULXbSzPTwhBu-xitQqjr7_UGDSg_"
+      },
+      "10": {
+        "title": "110. An-Nasr",
+        "playlist": "PL2QijULXbSzMJpp7ks8JuACKKqfmgQdz-"
+      },
+      "11": {
+        "title": "109. Al-Kafiroon",
+        "playlist": "PL2QijULXbSzMBA9sHBf651kHH2aAdlyKc"
+      },
+      "12": {
+        "title": "108. Al-Kawthar",
+        "playlist": "PL2QijULXbSzOIVzm3v6ry836tSjMGJhgV"
+      },
+      "13": {
+        "title": "107. Al-Ma`un",
+        "playlist": "PL2QijULXbSzP-ta3ngH26pf_pkRjq2eWw"
+      },
+      "14": {
+        "title": "105. Al-Fil",
+        "playlist": "PL2QijULXbSzMP4zM8oC_c7ZwG3xv4VSC2"
+      },
+      "15": {
+        "title": "104. Al-Humazah",
+        "playlist": "PL2QijULXbSzMzmRh1FInpB90lbe556Psz"
+      },
+      "16": {
+        "title": "103. Al-Asr",
+        "playlist": "PL2QijULXbSzMfDcdN9MIvZpI59fOUHdvO"
+      },
+      "17": {
+        "title": "102. Al-takasur",
+        "playlist": "PL2QijULXbSzNW5q8kzN_Q5hmdLKjqdNr2"
+      },
+      "18": {
+        "title": "106. Quraysh",
+        "playlist": "PL2QijULXbSzOJk7Buw3f-mWLne7iThFVV"
+      },
+      "19": {
+        "title": "101. Al-Quaria",
+        "playlist": "PL2QijULXbSzMthehJ1-w7Va1umAIpHOux"
+      },
+      "20": {
+        "title": "100. Al-Aadiyath",
+        "playlist": "PL2QijULXbSzO4LCP9YxLursd_h_gGsCH4"
+      },
+      "21": {
+        "title": "99. Al-Zilzal",
+        "playlist": "PL2QijULXbSzP5RcudU0koz1xjNNC33Svf"
+      },
+      "22": {
+        "title": "98. Al-Bayyina",
+        "playlist": "PL2QijULXbSzPuIuXJ38MUR2evRj5gCgUn"
+      },
+      "23": {
+        "title": "97. Al-Qadr",
+        "playlist": "PL2QijULXbSzNnmoiKOdu2xt8r1_3eyYVf"
+      },
+      "24": {
+        "title": "Inspiration Season 1",
+        "playlist": "PLQE6IdJu5sKPokMorFXs5CmzrRyt4Z440",
+        "image": "/assets/logo/inspiration-season2.jpg"
+      },
+      "25": {
+        "title": "Inspiration Season 2",
+        "playlist": "PLutdSTmJ7bAJ8h4r5CVkUxAf-_rG0u7Ui",
+        "image": "../assets/logo/inspiration-season2.jpg"
       }
     },
     "section": {
@@ -24,23 +122,21 @@
       "2": {
         "title": "Basheer Muhiyudheen",
         "image": ""
+      },
+      "3": {
+        "title": "Web Series",
+        "image": "../assets/logo/video.png"
       }
     }
   },
   "index": {
     "sections": {
-      "0": ["1"],
+      "0": ["1", "3"],
       "1": ["2"]
     },
     "playlists": {
-      "2": ["1"]
-    },
-    "section_parent": {
-      "2": "1",
-      "1": "0"
-    },
-    "playlist_parent": {
-      "1": "2"
+      "2": ["5", "1", "2", "4", "3", "23", "22", "21", "20", "19", "17", "16", "15", "14", "18", "13", "12", "11", "10", "9", "8", "7", "6"],
+      "3": ["24", "25"]
     }
   }
 }
