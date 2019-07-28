@@ -13,6 +13,9 @@
         {{index + 1}}. {{video.snippet.title.split('|')[0]}}
       </div>
     </div>
+    <div v-if="error" id="error" style="border: 1px solid red">
+      {{error}}
+    </div>
   </div>
 </template>
 
@@ -28,7 +31,8 @@ export default {
       play: false,
       videoId: '',
       title: false,
-      videos: []
+      videos: [],
+      error: false
     }
   },
   components: {
@@ -45,6 +49,8 @@ export default {
       try {
         thumbnail = video.snippet.thumbnails.medium.url
       } catch (e) {
+        this.error = e
+        this.error += e.error + e.message
         console.log(e)
       }
       return thumbnail
@@ -63,6 +69,9 @@ export default {
         .then(function (response) {
           let data = response.data
           _this.videos = data.items
+        })
+        .catch(function (error) {
+          _this.error = error.stack
         })
     }
   },

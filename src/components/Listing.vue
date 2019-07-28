@@ -137,7 +137,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: .2em;
-  margin-top: 1em;
+  margin: 1em;
 }
 .section {
     background-color: white;

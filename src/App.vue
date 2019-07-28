@@ -80,6 +80,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   padding-top: 3.2rem;
+  position: relative;
 }
 h1, h2 {
   font-weight: normal;
@@ -105,7 +106,9 @@ body {
   color: white;
   text-align: left;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
-  position: sticky;
+  position: absolute;
+  left: 0;
+  right: 0;
   top: 0;
   z-index: 1
 }

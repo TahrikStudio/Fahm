@@ -14,6 +14,7 @@ rm www/static/js/*.map
 # Replace
 sed -i 's/\/static/.\/static/g' www/index.html
 sed -i 's/\/static\/img/\.\.\/img/g' www/static/css/app*.css
+sed -ri 's/i\.p\+\"static/\"static/g' www/static/js/app*.js
 
 export ANDROID_HOME=/home/niyasc/Development
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
@@ -33,6 +34,7 @@ stty echo
 cat << EOT > platforms/android/release.properties
 storeFile=../../appkey.keystore
 storePassword=$spassw
+keyAlias=appkey
 keyPassword=$spassw
 EOT
 

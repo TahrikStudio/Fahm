@@ -2,7 +2,7 @@
   <div>
     <div class="nav">
       <h2>
-        <router-link id="back" :to="{name: 'Menu'}"><img class="icon" src="../assets/meta/back.svg"></router-link>Check for updates
+        <router-link id="back" :to="{name: 'Listing'}"><img class="icon" src="../assets/meta/back.svg"></router-link>Check for updates
       </h2>
     </div>
     <div class="content">
