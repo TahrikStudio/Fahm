@@ -17,7 +17,7 @@
     "cordova-plugin-dialogs": "^2.0.1",
     "cordova-plugin-fullscreen": "^1.2.0",
     "cordova-plugin-globalization": "^1.11.0",
-    "cordova-plugin-inappbrowser": "^3.0.0",
+    "cordova-plugin-inappbrowser": "^3.1.0",
     "cordova-plugin-insomnia": "git+https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git",
     "cordova-plugin-market": "^1.2.0",
     "cordova-plugin-nativestorage": "^2.3.2",
@@ -37,7 +37,9 @@
       "cordova-plugin-buildinfo": {},
       "cordova-plugin-market": {},
       "cordova-plugin-whitelist": {},
-      "cordova-promise-polyfill": {}
+      "cordova-promise-polyfill": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-nativestorage": {}
     },
     "platforms": [
       "android"
