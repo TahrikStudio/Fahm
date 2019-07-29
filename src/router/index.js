@@ -9,6 +9,11 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      path: '/update',
+      name: 'Update',
+      component: Update
+    },
+    {
       path: '/:sectionId?',
       name: 'Listing',
       component: Listing
@@ -17,11 +22,6 @@ export default new Router({
       path: '/playlist/:playlistId?',
       name: 'Playlist',
       component: Playlist
-    },
-    {
-      path: '/update',
-      name: 'Update',
-      component: Update
     }
   ]
 })

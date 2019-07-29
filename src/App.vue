@@ -10,6 +10,16 @@ import json from './assets/data/data.json'
 import {initializeRating} from './assets/script/rating.js'
 const STORAGE_KEY = 'fahm-json'
 
+window.log = ''
+if (!console._log_old) {
+  console._log_old = console.log
+  console.log = function (msg) {
+    console._log_old(msg)
+    window.log += Date() + ' ' + msg + '<br>'
+  }
+  console.error = console.log
+}
+
 export default {
   name: 'App',
   methods: {
@@ -22,6 +32,12 @@ export default {
       document.addEventListener('backbutton', this.onBackKeyDown, false)
 
       initializeRating()
+
+      console.log('plugins loaded')
+  
+      console.log(JSON.stringify(window.plugins))
+
+      console.log(JSON.strigify(window.cordova.plugins))
     },
     onBackKeyDown: function (e) {
       e.preventDefault()

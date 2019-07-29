@@ -10,7 +10,7 @@
     <div class="videos">
       <div @click="playVideo(video)" v-bind:key="index" class="video" v-for="(video, index) in videos">
         <img :src="thumbnail(video)">
-        {{index + 1}}. {{video.snippet.title.split('|')[0]}}
+        {{video.snippet.title.split('|')[0]}}
       </div>
     </div>
     <div v-if="error" id="error" style="border: 1px solid red">

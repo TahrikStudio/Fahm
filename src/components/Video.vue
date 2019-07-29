@@ -14,7 +14,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'Video',
   props: {
@@ -29,7 +28,6 @@ export default {
   },
   methods: {
     fullscreenSuccess: function () {
-      console.log('fullscreen success')
     },
     fullscreenError: function (error) {
       console.log('fullscreen error' + error)
@@ -54,10 +52,6 @@ export default {
 
       if (fullscreenElement != null) {
         screen.orientation.lock('landscape')
-        if (window.plugins) window.plugins.insomnia.keepAwake()
-        /* global admob */
-        /* eslint no-undef: ["error", { "typeof": true }] */
-        if (window.admob) admob.banner.hide()
         /* global AndroidFullScreen */
         /* eslint no-undef: ["error", { "typeof": true }] */
         if (window.AndroidFullScreen) {
@@ -65,10 +59,6 @@ export default {
         }
       } else {
         screen.orientation.lock('portrait')
-        if (window.plugins) window.plugins.insomnia.allowSleepAgain()
-        /* global admob */
-        /* eslint no-undef: ["error", { "typeof": true }] */
-        if (window.admob) admob.banner.show()
         /* global AndroidFullScreen */
         /* eslint no-undef: ["error", { "typeof": true }] */
         if (window.AndroidFullScreen) {
@@ -77,7 +67,10 @@ export default {
       }
     },
     stopVideo: function () {
-      if (this.player) this.player.stopVideo()
+      if (this.player) {
+        console.log('stopping')
+        this.player.pauseVideo()
+      }
     },
     playVideo: function () {
       let _self = this
@@ -98,6 +91,16 @@ export default {
         window.scrollTo(0, 0)
       }
 
+      function onPlayerStateChange (event) {
+        if (event.data === YT.PlayerState.PLAYING) {
+          console.log('playing video')
+          if (window.plugins) window.plugins.insomnia.keepAwake()
+        } else if (event.data === YT.PlayerState.PAUSED) {
+          console.log('video paused')
+          if (window.plugins) window.plugins.insomnia.allowSleepAgain()
+        }
+      }
+
       function takeControl () {
         if (_self.videoId) {
           _self.player = new YT.Player('video-frame', {
@@ -105,7 +108,8 @@ export default {
             width: '100%',
             height: '100%',
             events: {
-              'onReady': onPlayerReady
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
             }
           })
         }
@@ -132,6 +136,9 @@ export default {
     document.addEventListener('MSFullscreenChange', this.toggleFullScreen)
     document.addEventListener('pause', this.stopVideo)
     this.playVideo()
+  },
+  beforeDestroy: function () {
+    if (window.plugins) window.plugins.insomnia.allowSleepAgain()
   },
   watch: {
     'videoId': function (videoId) {

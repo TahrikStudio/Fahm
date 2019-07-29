@@ -44,6 +44,9 @@
 import {openRateDialog} from '../assets/script/rating.js'
 export default {
   name: 'Listing',
+  mounted: function () {
+    if (window.plugins) window.plugins.insomnia.allowSleepAgain()
+  },
   computed: {
     storeData () {
       return this.$store.state.data
