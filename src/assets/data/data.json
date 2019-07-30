@@ -119,11 +119,11 @@
         "playlist": "PLHPW7nn9Wmb66OICiQfWwlSUU4rM1rY3D"
       },
       "28": {
-        "title": "02. Al-Baqarah",
+        "title": "Ramadan Series - Nauman Ali Khan",
         "playlist": "PLutdSTmJ7bALJZ9CTIAoEwtdUBcHgua3C"
       },
       "29": {
-        "title": "Ramadan 2017 Gems - Nauman Ali Khan",
+        "title": "Surah Naba'a to Al-Zilzal",
         "playlist": "PLutdSTmJ7bAJd6UsyVNMUPjpa0ld_igG9"
       },
       "18": {
@@ -162,8 +162,8 @@
     "playlists": {
       "2": ["5", "1", "2", "4", "3", "23", "22", "21", "20", "19", "17", "16", "15", "14", "18", "13", "12", "11", "10", "9", "8", "7", "6"],
       "3": ["24", "25"],
-      "4": ["26", "29"],
-      "5": ["28", "27"]
+      "4": ["26", "28"],
+      "5": ["28", "27", "29"]
     }
   }
 }
