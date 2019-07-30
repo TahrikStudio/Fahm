@@ -95,8 +95,8 @@ export default {
         if (event.data === YT.PlayerState.PLAYING) {
           console.log('playing video')
           if (window.plugins) window.plugins.insomnia.keepAwake()
-        } else if (event.data === YT.PlayerState.PAUSED) {
-          console.log('video paused')
+        } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+          console.log('video paused or ended')
           if (window.plugins) window.plugins.insomnia.allowSleepAgain()
         }
       }

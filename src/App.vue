@@ -136,6 +136,11 @@ body {
 }
 .nav a {
   color: white;
+  display: table-cell;
+  vertical-align: middle;
+}
+.nav h2 {
+  display: table-cell;
 }
 .external {
   background: var(--primary-color);

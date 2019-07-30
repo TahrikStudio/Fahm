@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="nav">
+      <router-link id="back" :to="{name: 'Listing', params: {sectionId: sectionId}}"><img class="icon" src="../assets/meta/back.svg"></router-link>
       <h2>
-        <router-link id="back" :to="{name: 'Listing', params: {sectionId: sectionId}}"><img class="icon" src="../assets/meta/back.svg"></router-link>{{playlist.title}}
+        {{playlist.title}}
       </h2>
     </div>
     <Video :title="title" :videoId="videoId" v-if="play"/>

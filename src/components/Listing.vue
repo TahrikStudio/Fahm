@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="nav">
-      <h2 v-if="parentId">
-        <router-link id="back" :to="{name: 'Listing', params: {sectionId: parentId}}"><img class="icon" src="../assets/meta/back.svg"></router-link>{{section.title}}
-      </h2>
-      <h2 v-else><a><img class="icon" src="../assets/meta/back-disabled.svg"></a>Menu</h2>
+      <router-link v-if="parentId" id="back" :to="{name: 'Listing', params: {sectionId: parentId}}"><img class="icon" src="../assets/meta/back.svg"></router-link>
+      <a v-else><img class="icon" src="../assets/meta/back-disabled.svg"></a>
+      <h2 v-if="parentId">{{section.title}}</h2>
+      <h2 v-else>Menu</h2>
 
     </div>
     <div class="sections" v-if="sections">
