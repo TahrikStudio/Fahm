@@ -118,7 +118,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .categories {
-  margin-top: 5vh;
+  margin-top: 1rem;
 }
 .category a{
   padding: 1em 1em;
