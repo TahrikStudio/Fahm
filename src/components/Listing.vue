@@ -5,9 +5,8 @@
       <a v-else><img class="icon" src="../assets/meta/back-disabled.svg"></a>
       <h2 v-if="parentId">{{section.title}}</h2>
       <h2 v-else>Menu</h2>
-
     </div>
-    <div class="sections" v-if="sections">
+    <div class="sections" v-if="sections.length">
       <router-link v-bind:key="index" v-for="(section, index) in sections" :to="{name: 'Listing', params: {sectionId: section.id}}">
       <div class="section">
           <img v-if="section.image" :src="section.image">
@@ -17,8 +16,8 @@
       </div>
       </router-link>
     </div>
-    <div class="categories">
-      <div v-bind:key="index" class="category" v-if="playlists" v-for="(playlist, index) in playlists">
+    <div class="categories" v-if="playlists.length">
+      <div v-bind:key="index" class="category" v-for="(playlist, index) in playlists">
         <router-link :to="{name: 'Playlist', params: {playlistId: playlist.id}}">
           {{playlist.title}}
         </router-link>
@@ -140,14 +139,14 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: .2em;
-  margin: 1em;
+  margin: 1rem;
 }
 .section {
     background-color: white;
     padding: .5em;
     box-shadow: 1px 1px 1px #ddd;
     position: relative;
-    height: 120px;
+    height: 7rem;
     word-break: break-word
 }
 .section span {
@@ -161,6 +160,5 @@ hr {
   margin: auto;
   max-width: 80%;
   max-height: 84px;
-  height: 80%;
 }
 </style>

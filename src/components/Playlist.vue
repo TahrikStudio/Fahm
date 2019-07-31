@@ -7,7 +7,6 @@
       </h2>
     </div>
     <Video :title="title" :videoId="videoId" v-if="play"/>
-    <h3></h3>
     <div class="videos">
       <div @click="playVideo(video)" v-bind:key="index" class="video" v-for="(video, index) in videos">
         <img :src="thumbnail(video)">
@@ -119,7 +118,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-gap: .2em;
-  margin-top: 2vh
+  margin-top: 1rem;
 }
 .video {
     background-color: white;
