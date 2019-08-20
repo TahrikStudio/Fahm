@@ -126,9 +126,37 @@
         "title": "Surah Naba'a to Al-Zilzal",
         "playlist": "PLutdSTmJ7bAJd6UsyVNMUPjpa0ld_igG9"
       },
-      "18": {
+      "30": {
         "title": "18. Al-Kahf",
         "playlist": "PLutdSTmJ7bAJ1WYH6JHJLyErdRitJ04yE"
+      },
+      "31": {
+        "title": "Abathaah",
+        "playlist": "PLDuAaJA22MTBJa-Ll528wyZdykwBvGCTI"
+      },
+      "32": {
+        "title": "Mizhippookkal",
+        "playlist": "PLDuAaJA22MTAieEWdVynoUDf1Qa7LYsoy"
+      },
+      "33": {
+        "title": "Hijaaz",
+        "playlist": "PLDuAaJA22MTBO5QoLLguEQ-PwHiyGLcUo"
+      },
+      "34": {
+        "title": "Orumikkam Othukalikkam",
+        "playlist": "PLDuAaJA22MTC0pw8GFY7-eUpaS5YoDpv-"
+      },
+      "35": {
+        "title": "Moosa nabiyum Firaunum",
+        "playlist": "PLDuAaJA22MTCLGom2N0KFWxTDMT7-porv"
+      },
+      "36": {
+        "title": "Aadam",
+        "playlist": "PLDuAaJA22MTBI8DsL_q4hBEQw6LgXSjuS"
+      },
+      "37": {
+        "title": "Minnaminung",
+        "playlist": "PLDuAaJA22MTBw3cQk5nSmJib_S5Kc-WCT"
       }
     },
     "section": {
@@ -151,19 +179,23 @@
       },
       "5": {
         "title": "Nauman Ali Khan"
+      },
+      "6": {
+        "title": "Songs"
       }
     }
   },
   "index": {
     "sections": {
-      "0": ["1", "3", "4"],
+      "0": ["1", "3", "4", "6"],
       "1": ["2", "5"]
     },
     "playlists": {
-      "2": ["5", "1", "2", "4", "3", "23", "22", "21", "20", "19", "17", "16", "15", "14", "18", "13", "12", "11", "10", "9", "8", "7", "6"],
+      "2": ["5", "1", "2", "4", "3", "23", "22", "21", "20", "19", "17", "16", "15", "14", "30", "13", "12", "11", "10", "9", "8", "7", "6"],
       "3": ["24", "25"],
       "4": ["26", "28"],
-      "5": ["27", "29"]
+      "5": ["27", "29"],
+      "6": ["37", "36", "35", "34", "33", "32", "31"]
     }
   }
 }
