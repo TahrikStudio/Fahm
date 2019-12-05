@@ -139,7 +139,7 @@
         "playlist": "PLDuAaJA22MTAieEWdVynoUDf1Qa7LYsoy"
       },
       "33": {
-        "title": "ഹിസാജ്",
+        "title": "ഹിജാസ്",
         "playlist": "PLDuAaJA22MTBO5QoLLguEQ-PwHiyGLcUo"
       },
       "34": {
@@ -161,6 +161,10 @@
       "38": {
         "title": "ഹിജ്റയും ജീവിതവും",
         "playlist": "PLrRWL60OJKqMsi78gWsho0N24gH2eBJmM"
+      },
+      "39": {
+        "title": "അസ്വഹാബ",
+        "playlist": "PLPNZjzEfDbXNi6v0M9h1FtIn5MVy_q1kB"
       }
     },
     "section": {
@@ -199,7 +203,7 @@
       "3": ["24", "25"],
       "4": ["26", "28", "38"],
       "5": ["27", "29"],
-      "6": ["37", "36", "35", "34", "33", "32", "31"]
+      "6": ["37", "36", "35", "34", "33", "32", "31", "39"]
     }
   }
 }
